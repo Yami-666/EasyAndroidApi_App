@@ -1,4 +1,4 @@
-# Android MVI App without LiveData 💜
+# Android MVI App with Flow 💜
 
 🚧 The application is under active development. Feedback is welcome 🚧
 
