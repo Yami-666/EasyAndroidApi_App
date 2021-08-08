@@ -28,12 +28,28 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+
     kotlinOptions {
         jvmTarget = '11'
+    }
+
+    buildFeatures {
+        dataBinding true
     }
 }
 
 dependencies {
+    def nav_version = "2.3.5"
+    // Kotlin
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // Feature module Support
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+
+    // Testing Navigation
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+
     implementation("com.google.dagger:dagger:2.38.1")
     kapt("com.google.dagger:dagger-compiler:2.38.1")
 

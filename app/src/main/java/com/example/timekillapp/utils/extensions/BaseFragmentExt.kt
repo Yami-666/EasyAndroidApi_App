@@ -1,9 +1,10 @@
 package com.example.timekillapp.utils.extensions
 
 import com.example.timekillapp.core.base.BaseFragment
+import com.example.timekillapp.core.base.BaseViewModel
 import com.rasalexman.sresult.data.dto.SResult
 
-fun <T : Any> BaseFragment.handleViewState(result: SResult<T>) {
+fun <VM : BaseViewModel, T : Any> BaseFragment<VM>.handleViewState(result: SResult<T>) {
     when (result) {
         is SResult.Success -> {
 
