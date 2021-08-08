@@ -1,7 +1,8 @@
-# Android MVI App without LiveData 
+# Android MVI App without LiveData 💜
 
+🚧 The application is under active development. Feedback is welcome 🚧
 
-## Stack: 
+## ⚙️ Stack: 
 0. Kotlin
 1. Coroutines & Flow
 2. DataBinding
@@ -12,7 +13,7 @@
 7. SResult to implement UI States
 8. Android KTX and etc.
 
-## Architecture patterns: 
+## 🔥 Architecture patterns: 
 1. Model-View-Intent
 2. Clean Architecture
 3. Data-Mappers
