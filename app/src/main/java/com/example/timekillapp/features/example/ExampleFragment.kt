@@ -4,7 +4,9 @@ import androidx.fragment.app.viewModels
 import com.example.timekillapp.R
 import com.example.timekillapp.core.base.BaseBindingFragment
 import com.example.timekillapp.databinding.FragmentExampleBinding
+import dagger.hilt.android.scopes.FragmentScoped
 
+@FragmentScoped
 class ExampleFragment : BaseBindingFragment<FragmentExampleBinding, ExampleViewModel>() {
 
     override val layoutId: Int
@@ -14,6 +16,5 @@ class ExampleFragment : BaseBindingFragment<FragmentExampleBinding, ExampleViewM
 
     override fun initBinding(binding: FragmentExampleBinding) {
         super.initBinding(binding)
-        binding.textView.text = "Fuck you!"
     }
 }
