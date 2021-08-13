@@ -11,7 +11,8 @@
 5. Room DataBase
 6. Retrofit 2
 7. SResult to implement UI States
-8. Android KTX and etc.
+8. Glide
+9. Android KTX and etc.
 
 ## 🔥 Architecture patterns: 
 1. Model-View-Intent
