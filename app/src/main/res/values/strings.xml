@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TimeKillApp</string>
+
+    <string name="example">Example, %1$s!</string>
 </resources>

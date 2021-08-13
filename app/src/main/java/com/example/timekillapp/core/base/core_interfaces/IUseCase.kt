@@ -1,4 +1,4 @@
-package com.example.timekillapp.domain
+package com.example.timekillapp.core.base.core_interfaces
 
 import kotlinx.coroutines.flow.Flow
 

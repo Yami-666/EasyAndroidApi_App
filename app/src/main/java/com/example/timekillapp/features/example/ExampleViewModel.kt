@@ -1,6 +1,7 @@
 package com.example.timekillapp.features.example
 
 import com.example.timekillapp.core.base.BaseViewModel
+import com.example.timekillapp.domain.example.IGetExampleUseCase
 import com.example.timekillapp.features.example.example_contract.ViewModelEffects
 import com.example.timekillapp.features.example.example_contract.ViewModelEvents
 import com.example.timekillapp.utils.extensions.handleEvent
@@ -10,11 +11,13 @@ import com.rasalexman.sresult.common.extensions.loadingResult
 import com.rasalexman.sresult.common.extensions.unsafeLazy
 import com.rasalexman.sresult.common.typealiases.AnyResult
 import com.rasalexman.sresult.data.dto.SResult
+import dagger.hilt.android.scopes.ViewModelScoped
 import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject
 
+@ViewModelScoped
 class ExampleViewModel @Inject constructor(
-
+    private val getExampleUseCase: IGetExampleUseCase
 ) : BaseViewModel() {
 
     override val anyResultFlow: StateFlow<SResult<*>> by unsafeLazy {
