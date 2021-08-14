@@ -14,7 +14,4 @@ class ExampleFragment : BaseBindingFragment<FragmentExampleBinding, ExampleViewM
 
     override val viewModel: ExampleViewModel by viewModels()
 
-    override fun initBinding(binding: FragmentExampleBinding) {
-        super.initBinding(binding)
-    }
 }

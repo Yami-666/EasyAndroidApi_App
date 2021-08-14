@@ -7,4 +7,10 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "TimeKillerApp"
+
 include ':app'
+include ':core'
+include ':model'
+include ':data'
+include ':domain'
+include ':presentation'
