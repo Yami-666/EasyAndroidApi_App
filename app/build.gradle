@@ -44,6 +44,8 @@ android {
 }
 
 dependencies {
+    implementation project(path: ':core')
+    implementation project(path: ':domain')
     // Dagger 2 & Hilt
     def hilt_version = '2.38.1'
 

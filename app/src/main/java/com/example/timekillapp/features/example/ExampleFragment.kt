@@ -1,8 +1,8 @@
 package com.example.timekillapp.features.example
 
 import androidx.fragment.app.viewModels
+import com.example.core.base.BaseBindingFragment
 import com.example.timekillapp.R
-import com.example.timekillapp.core.base.BaseBindingFragment
 import com.example.timekillapp.databinding.FragmentExampleBinding
 import dagger.hilt.android.scopes.FragmentScoped
 

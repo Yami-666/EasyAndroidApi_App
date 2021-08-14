@@ -1,16 +1,11 @@
 package com.example.timekillapp.utils.extensions
 
-import androidx.lifecycle.viewModelScope
 import com.example.timekillapp.core.base.BaseViewModel
 import com.example.timekillapp.core.base.IEvent
 import com.example.timekillapp.core.base.ISideEffect
 import com.example.timekillapp.core.base.asStateFlow
-import com.rasalexman.sresult.common.extensions.emptyResult
 import com.rasalexman.sresult.data.dto.SResult
 import kotlinx.coroutines.CoroutineDispatcher
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.channels.consumeEach
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*
 
 inline fun <reified E : IEvent, T : SResult<*>> BaseViewModel.handleEvent(
