@@ -10,7 +10,7 @@ rootProject.name = "TimeKillerApp"
 
 include ':app'
 include ':core'
-include ':model'
+include ':models'
 include ':data'
 include ':domain'
 include ':presentation'
