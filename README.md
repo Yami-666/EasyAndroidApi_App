@@ -15,8 +15,8 @@
 9. Android KTX and etc.
 
 ## 🔥 Architecture patterns: 
-1. Model-View-Intent
-2. Clean Architecture
-3. Data-Mappers
+0. Model-View-Intent
+1. Clean Architecture
+2. Data-Mappers
 
 
